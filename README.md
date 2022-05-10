@@ -8,6 +8,9 @@ git clone https://github.com/halilibrahimavsar/youtube-downloader.git
 ```
 
 then all you need to do is in terminal or cmd type the following in where you download the project directory
+```
+cd youtube-downloader
+```
 
 ```
 python3 youtubeDownloader.py
