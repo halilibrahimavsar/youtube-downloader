@@ -4,8 +4,6 @@
 Author : Halil ibrahim AVSAR
 """
 
-
-
 from os import system, getcwd, name, path
 from sys import executable
 from time import sleep
@@ -19,20 +17,6 @@ green = Fore.GREEN
 blue = Fore.BLUE
 yellv = Fore.YELLOW
 
-
-#setup in first run
-def setup():
-    while True:
-        try:
-            from pytube import YouTube, Playlist, exceptions
-            break
-        except ModuleNotFoundError as err:
-            print(err)
-            download_pytube = input("DO YOU WANT TO DOWNLOAD pytube [Y] ('q' for quit):")
-            if download_pytube.lower() == "y":
-                system(executable + " -m pip install pytube")
-            elif download_pytube.lower() == "q":
-                exit()
 
 def shell_clear():
     system("clear" if name != "nt" else "cls")
@@ -145,7 +129,6 @@ def launch():
             
 
 if __name__ == "__main__":
-    setup() #setup missing modules
     launch() #launch the program
 
 

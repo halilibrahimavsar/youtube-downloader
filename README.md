@@ -13,7 +13,11 @@ cd youtube-downloader
 ```
 
 ```
-python3 youtubeDownloader.py
+python -m pip install -r requirements.txt
+```
+
+```
+python youtubeDownloader.py
 ```
 
 
