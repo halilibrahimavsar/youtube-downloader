@@ -8,6 +8,7 @@ from os import system, getcwd, name, path
 from sys import executable
 from time import sleep
 from colorama import init, Fore
+from pytube import YouTube
 
 
 init(autoreset=True)
